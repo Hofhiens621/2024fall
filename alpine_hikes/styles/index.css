@@ -22,6 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
     margin: 0px;
     font-family: var(--paragraph-font);
+    font-size: 15px;
 }
 a {
     font-family: var(--paragraph-font);
@@ -31,7 +32,7 @@ a {
 /* header */
 
 header {
-    background-color: var(--primary-color);
+    background-color: var(--accent2-color);
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     border: 1px solid gray;
@@ -46,6 +47,7 @@ header {
     width: 100px;
 }
 h1 {
+    color: #0b4d49;
     grid-column: 2/4;
     font-size: 30px;
     justify-content: space-around;
@@ -58,10 +60,17 @@ nav {
     height: 120px;
 }
 nav a {
+    color: var(--primary-color);
     font-size: 20px;
     justify-content: space-around;
     align-content: space-around;
     text-align: center;
+    text-decoration: none;
+}
+nav a:hover {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    text-decoration: none;
 }
 
 
@@ -85,10 +94,11 @@ nav a {
     position: relative;
 }
 #hero_text_box {
+    background-color: var(--secondary-color);
+    color: white;
     box-sizing: border-box;
     grid-column: 3/6;
     grid-row: 4/10;
-    background-color: brown;
     padding: 30px;
     justify-self: center;
     border: 1px solid gray;
@@ -96,14 +106,13 @@ nav a {
 #hero_text {
     text-align: center;
     align-self: center;
-    background-color: brown;
 }
 
 
 /* main */
 
 main {
-    background-color: burlywood;
+    background-color: var(--accent1-color);
     justify-items: center;
     border: 1px solid gray;
     display: grid;
@@ -111,6 +120,7 @@ main {
     grid-template-rows: 2fr 4fr 1fr 4fr 1fr;
 }
 h2 {
+    color: white;
     margin: 40px;
     grid-column: 1/8;
 }
@@ -119,19 +129,22 @@ h2 {
     border: 1px solid gray;
     grid-column: 2/7;
     width: 100%;
-    height: 226px;
+    height: 241px;
     overflow: hidden;
 }
 .slider_box:nth-of-type(2) {
     grid-row: 4/5;
 }
 h3 {
+    color: var(--primary-color);
     padding: 15px;
     height: 20px;
 }
 .slider {
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    overflow: auto;
 }
 .slider_item {
     box-sizing: border-box;
@@ -144,6 +157,7 @@ h3 {
 .slider_link {
     margin: 0px 5px 10px 5px;
     box-sizing: border-box;
+    text-decoration: none;
 }
 .slider_link:nth-of-type(1) {
     margin-left: 10px;
@@ -162,10 +176,13 @@ h3 {
     height: 175px;
 }
 .slider_item h4 {
+    color: var(--primary-color);
+    font-size: 18px;
     justify-self: center;
     align-self: center;
 }
 .slider_item p {
+    color: var(--primary-color);
     grid-row: 2/5;
     grid-column: 2/3;
     margin: 5px;
@@ -174,11 +191,19 @@ h3 {
 /* footer */
 
 footer {
-    background-color: brown;
+    background-color: var(--primary-color);
+    color: white;
     padding: 25px 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    color: var(--secondary-color);
 }
 .social a {
     text-decoration: none;
