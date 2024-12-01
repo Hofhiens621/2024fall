@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alpine Trail Guide | Home</title>
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
     <div id="content">
@@ -19,63 +20,79 @@
             </nav>
         </header>
 <!-- Hero -->
-        <div>
-            <img src="images/hero_img.jpeg" alt="photo of alpine">
-            <p>Welcome to Alpine! We are home to beautiful hikes, lots of wildlife, and awesome views. The Alpine Trail Guide is dedicated to helping you explore Alpine's wonders. Find local hikes that fit your schedule and suit your needs, all in one place.</p>
+        <div id="hero">
+            <div id="hero_img_box">
+                <img id="hero_img" src="images/hero-img.jpg" alt="photo of alpine">
+            </div>
+            <section id="hero_text_box">
+                <p id="hero_text">Welcome to Alpine! We are home to beautiful hikes, lots of wildlife, and awesome views. The Alpine Trail Guide is dedicated to helping you explore Alpine's wonders. Find local hikes that fit your schedule and suit your needs, all in one place.</p>
+            </section>
         </div>
 
         <main>
             <h2>Browse Hikes</h2>
 <!-- First Slider -->
-            <div class="slider_section_box">
+            <div class="slider_box">
                 <h3>Popular</h3>
                 <div class="slider">
-                    <a href="red_pass_trail.html">
+                    <a class="slider_link" href="red_pass_trail.html">
                         <section class="slider_item">
-                            <img src="images/resized_Trail2.png" alt="red pass trail map">
+                            <div>
+                                <img src="images/resized_Trail2.png" alt="red pass trail map">
+                            </div>
                             <h4>Red Pass Trail</h4>
-                            <p>Generally considered an easy route, it takes an average of 49 min to complete. This trail is great for hiking, and it's unlikely you'll encounter many other people while exploring. The best times to visit this trail are May through September. The flora on this trail features towering pine trees, seep willow, poplar, red dogwood, indian paintbrush, salsify, goldenrod, harebells, cow parsnip, boxwood, spirea and much more.</p>
+                            <p>Generally considered an easy route, it takes an average of 49 min to complete. This trail is great for hiking, and it's...</p>
                         </section>
                     </a>
-                    <a href="lunch_counter.html">
+                    <a class="slider_link" href="lunch_counter.html">
                         <section class="slider_item">
-                            <img src="images/resized_lunch_map.png" alt="lunch counter trail map">
+                            <div>
+                                <img src="images/resized_lunch_map.png" alt="lunch counter trail map">
+                            </div>
                             <h4>Lunch Counter</h4>
-                            <p>This trail leads down to one of the most famous rapids of the Snake River: The Lunch Counter. It can be quite fun to watch tourists and locals kayak, white water raft, or even surf the wave during the summer. The trail is moderately steep but not long or dangerous. The bottom is very rocky and offers great views of the river and surrounding nature. Its namesake is not for nothing, either, and it’s a great place to go on a picnic.</p>
+                            <p>This trail leads down to one of the most famous rapids of the Snake River: The Lunch Counter. It can be quite fun to wa...</p>
                         </section>
                     </a>
-                    <a href="sister-trail.html">
+                    <a class="slider_link" href="sister-trail.html">
                         <section class="slider_item">
-                            <img src="images/resized_Trail1.png" alt="sister trail map">
+                            <div>
+                                <img src="images/resized_Trail1.png" alt="sister trail map">
+                            </div>
                             <h4>Sister Trail</h4>
-                            <p>This trail makes for a perfect trail run. It has one or two steep areas that are only a few meters long, and is flat most of the way outside of that. Most of the trail is forested with moderate sunshine, having lots of pine and aspen trees. During fall, there are many chokecherry and serviceberry bushes that are edible and quite tasty. The trail can also be done by snowshoe during the winter. Taking the Jordan Canyon road back down is a lot sunnier and a good way to make the trail into a loop. It is common to see deer and moose also frequent the area. Be cautious and bring wildlife deterrent. Despite that, I still take my dog with me and don’t worry about being chased by a moose.</p>
+                            <p>This trail makes for a perfect trail run. It has one or two steep areas that are only a few meters long, and is flat most of the...</p>
                         </section>
                     </a>
                 </div>
             </div>
 <!-- Second Slider -->
-            <div>
+            <div class="slider_box">
                 <h3>Nearby</h3>
                 <div class="slider">
-                    <a href="sister-trail.html">
+                    <a class="slider_link" href="sister-trail.html">
                         <section class="slider_item">
-                            <img src="images/resized_Trail1.png" alt="sister trail map">
+                            <div>
+                                <img src="images/resized_Trail1.png" alt="sister trail map">
+                            </div>
                             <h4>Sister Trail</h4>
-                            <p>This trail makes for a perfect trail run. It has one or two steep areas that are only a few meters long, and is flat most of the way outside of that. Most of the trail is forested with moderate sunshine, having lots of pine and aspen trees. During fall, there are many chokecherry and serviceberry bushes that are edible and quite tasty. The trail can also be done by snowshoe during the winter. Taking the Jordan Canyon road back down is a lot sunnier and a good way to make the trail into a loop. It is common to see deer and moose also frequent the area. Be cautious and bring wildlife deterrent. Despite that, I still take my dog with me and don’t worry about being chased by a moose.</p>
+                            <p>This trail makes for a perfect trail run. It has one or two steep areas that are only a few meters long, and is flat most of the...</p>
                         </section>
                     </a>
-                    <a href="lunch_counter.html">
+                    <a class="slider_link" href="lunch_counter.html">
                         <section class="slider_item">
-                            <img src="images/resized_lunch_map.png" alt="lunch counter trail map">
+                            <div>
+                                <img src="images/resized_lunch_map.png" alt="lunch counter trail map">
+                            </div>
                             <h4>Lunch Counter</h4>
-                            <p>This trail leads down to one of the most famous rapids of the Snake River: The Lunch Counter. It can be quite fun to watch tourists and locals kayak, white water raft, or even surf the wave during the summer. The trail is moderately steep but not long or dangerous. The bottom is very rocky and offers great views of the river and surrounding nature. Its namesake is not for nothing, either, and it’s a great place to go on a picnic.</p>
+                            <p>This trail leads down to one of the most famous rapids of the Snake River: The Lunch Counter. It can be quite fun to wa...</p>
                         </section>
                     </a>
-                    <a href="red_pass_trail.html">
+                    <a class="slider_link" href="red_pass_trail.html">
                         <section class="slider_item">
-                            <img src="images/resized_Trail2.png" alt="red pass trail map">
+                            <div>
+                                <img src="images/resized_Trail2.png" alt="red pass trail map">
+                            </div>
                             <h4>Red Pass Trail</h4>
-                            <p>Generally considered an easy route, it takes an average of 49 min to complete. This trail is great for hiking, and it's unlikely you'll encounter many other people while exploring. The best times to visit this trail are May through September. The flora on this trail features towering pine trees, seep willow, poplar, red dogwood, indian paintbrush, salsify, goldenrod, harebells, cow parsnip, boxwood, spirea and much more.</p>
+                            <p>Generally considered an easy route, it takes an average of 49 min to complete. This trail is great for hiking, and it's...</p>
                         </section>
                     </a>
                 </div>
