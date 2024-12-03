@@ -14,6 +14,8 @@
 
 body {
     margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 h1, h2, h3, h4, h5, h6 {
     margin: 0px;
@@ -83,15 +85,21 @@ nav a:hover {
     grid-template-rows: 1fr 75px 75px 75px repeat(6, 1fr);
 }
 #hero_img_box {
+    position: relative;
     grid-column: 2/7;
     grid-row: 2/5;
     z-index: -1;
     overflow: hidden;
 }
+#hero_img_layer {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 #hero_img {
     width: 1595px;
     z-index: -2;
-    position: relative;
 }
 #hero_text_box {
     background-color: var(--secondary-color);
@@ -103,9 +111,12 @@ nav a:hover {
     justify-self: center;
     border: 1px solid gray;
 }
+#hero_header {
+    text-align: center;
+    margin-bottom: 20px;
+}
 #hero_text {
     text-align: center;
-    align-self: center;
 }
 
 
@@ -119,7 +130,7 @@ main {
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 2fr 4fr 1fr 4fr 1fr;
 }
-h2 {
+main h2 {
     color: white;
     margin: 40px;
     grid-column: 1/8;
