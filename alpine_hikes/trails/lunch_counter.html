@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alpine Trail Guide | Lunch Counter</title>
+    <link rel="stylesheet" href="styles/trail.css">
 </head>
 <body>
     <div id="content">
@@ -32,6 +33,31 @@
                 <p>The trail is moderately steep but not long or dangerous. The bottom is very rocky and offers great views of the river and surrounding nature. Its namesake is not for nothing, either, and it's a great place to go on a picnic.</p>
             </div>
         </main>
+
+        <div class="comment-section"> 
+            <h2>Comments</h2> 
+            <div id="comments"></div> 
+            <textarea id="commentInput" placeholder="Write a comment..." rows="4" style="width: 100%;"></textarea> 
+            <button onclick="addComment()">Submit</button> 
+        </div> 
+     
+        <script> 
+            function addComment() { 
+                const commentInput = document.getElementById('commentInput'); 
+                const commentsDiv = document.getElementById('comments'); 
+                 
+                const commentText = commentInput.value; 
+                if (commentText) { 
+                    const commentDiv = document.createElement('div'); 
+                    commentDiv.className = 'comment'; 
+                    commentDiv.textContent = commentText; 
+                    commentsDiv.appendChild(commentDiv); 
+                    commentInput.value = ''; // Clear the input 
+                } else { 
+                    alert('Please enter a comment.'); 
+                } 
+            } 
+        </script> 
 
         <footer>
             <p>Alpine Trail Guide &copy; 2024 - Jacob Hofhiens</p>
