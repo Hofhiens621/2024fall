@@ -179,6 +179,9 @@ footer {
     justify-content: space-around;
     align-items: center;
 }
+footer p {
+    color: white;
+}
 footer a {
     color: white;
     text-decoration: none;
