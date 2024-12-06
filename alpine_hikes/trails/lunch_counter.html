@@ -4,74 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alpine Trail Guide | Lunch Counter</title>
-    <link rel="stylesheet" href="styles/trail.css">
+    <link rel="stylesheet" href="/2024fall/alpine_hikes/styles/trail.css">
 </head>
 <body>
     <div id="content">
         <header>
-            <a id="logo_link" href="index.html">
-                <img class="logo" src="images/alpine_trail_guide.jpg" alt="Alpine Trail Guide Logo">
+            <a id="logo_link" href="/2024fall/alpine_hikes/index.html">
+                <img class="logo" src="/2024fall/alpine_hikes/images/alpine_trail_guide.jpg" alt="Alpine Trail Guide Logo">
             </a>
             <h1>Alpine Trail Guide</h1>
             <nav id="nav">
-                <a href="index.html">Home</a>
-                <a href="contactus.html">Contact Us</a>
-                <a href="site-plan.html">Site Plan</a>
+                <a href="/2024fall/alpine_hikes/index.html">Home</a>
+                <a href="/2024fall/alpine_hikes/contactus.html">Contact Us</a>
+                <a href="/2024fall/alpine_hikes/site-plan.html">Site Plan</a>
             </nav>
         </header>
         
         <main>
-            <div>
-                <img src="images/lunch_counter_photo.jpg" alt="lunch counter photo">
+            <section id="info">
+                <img src="/2024fall/alpine_hikes/images/lunch_map.png" alt="lunch counter map">
                 <h2>Lunch Counter</h2>
                 <div id="details">
                     <p>Length: 0.4 miles</p>
                     <p>Time: 10 minutes</p>
                     <p>Difficulty: Easy</p>
                 </div>
-                <p>This trail leads down to one of the most famous rapids of the Snake River: The Lunch Counter. It can be quite fun to watch tourists and locals kayak, white water raft, or even surf the wave during the summer.</p>
-                <p>The trail is moderately steep but not long or dangerous. The bottom is very rocky and offers great views of the river and surrounding nature. Its namesake is not for nothing, either, and it's a great place to go on a picnic.</p>
+                <div id="description">
+                    <p>This trail leads down to one of the most famous rapids of the Snake River: The Lunch Counter. It can be quite fun to watch tourists and locals kayak, white water raft, or even surf the wave during the summer.</p>
+                    <p>The trail is moderately steep but not long or dangerous. The bottom is very rocky and offers great views of the river and surrounding nature. Its namesake is not for nothing, either, and it's a great place to go on a picnic.</p>
+                </div>
             </div>
+            <section id="comment_section">
+                <div class="whitespace"></div>
+                <div id="comment_box">
+                    <h2>Comments</h2>
+                    <div class="comment">
+                        <p class="commenter">Tyson</p>
+                        <div class="comment_img_box">
+                            <img src="/2024fall/alpine_hikes/images/lunch_counter_photo.jpg" alt="lunch counter photo">
+                        </div>
+                        <p>Love it!</p>
+                    </div>
+                    <div class="comment">
+                        <p class="commenter">Emily</p>
+                        <p>Love it! It's a family favorite! We go almost yearly for family reunions. Highly recommend.</p>
+                    </div>
+                    <div class="comment">
+                        <p class="commenter">ChatGPT</p>
+                        <p>The trail to the Lunch Counter is perfect for a low-key, rewarding hike. It's not too challenging, but it still feels like a bit of an adventure, and the river at the end makes for a cool and relaxing spot to hang out. Whether you're just out for a short walk or looking for a scenic spot to chill, this trail delivers some beautiful views and a nice way to spend part of your day.</p>
+                    </div>
+                </div>
+            </section>
         </main>
-
-        <div class="comment-section"> 
-            <h2>Comments</h2> 
-            <div id="comments"></div> 
-            <textarea id="commentInput" placeholder="Write a comment..." rows="4" style="width: 100%;"></textarea> 
-            <button onclick="addComment()">Submit</button> 
-        </div> 
-     
-        <script> 
-            function addComment() { 
-                const commentInput = document.getElementById('commentInput'); 
-                const commentsDiv = document.getElementById('comments'); 
-                 
-                const commentText = commentInput.value; 
-                if (commentText) { 
-                    const commentDiv = document.createElement('div'); 
-                    commentDiv.className = 'comment'; 
-                    commentDiv.textContent = commentText; 
-                    commentsDiv.appendChild(commentDiv); 
-                    commentInput.value = ''; // Clear the input 
-                } else { 
-                    alert('Please enter a comment.'); 
-                } 
-            } 
-        </script> 
 
         <footer>
             <p>Alpine Trail Guide &copy; 2024 - Jacob Hofhiens</p>
-            <p><a href="site-plan.html">Site Plan</a></p>
-            <p><a href="contactus.html">Contact Us</a></p>
+            <p><a href="/2024fall/alpine_hikes/site-plan.html">Site Plan</a></p>
+            <p><a href="/2024fall/alpine_hikes/contactus.html">Contact Us</a></p>
             <div class="social">
                 <a href="https://facebook.com" target="_blank">
-                    <img src="images/facebook.png" alt="fb icon">
+                    <img src="/2024fall/alpine_hikes/images/facebook.png" alt="fb icon">
                 </a>
                 <a href="https://twitter.com" target="_blank">
-                    <img src="images/twitter.png" alt="twitter icon">
+                    <img src="/2024fall/alpine_hikes/images/twitter.png" alt="twitter icon">
                 </a>
                 <a href="https://instagram.com" target="_blank">
-                    <img src="images/instagram.png" alt="instagram icon">
+                    <img src="/2024fall/alpine_hikes/images/instagram.png" alt="instagram icon">
                 </a>
             </div>
         </footer>
