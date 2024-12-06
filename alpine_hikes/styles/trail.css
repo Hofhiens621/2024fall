@@ -90,27 +90,30 @@ nav a:hover {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 100px 50px auto;
+    margin: 5%;
 }
 #info img {
     grid-column: 1/4;
     grid-row: 1/4;
-    width: 90%;
-    justify-self: center;
-    margin: 5%;
+    width: 95%;
+    margin-right: 5%;
 }
 #info h2 {
     grid-column: 4/7;
+}
+#info div p {
+    margin: 10px;
 }
 #details {
     grid-column: 4/7;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
-#info div p {
-    margin: 10px;
-}
 #description {
     grid-column: 4/7;
+}
+#description p {
+    text-align: left;
 }
 #comment_section {
     margin-top: 50px;
