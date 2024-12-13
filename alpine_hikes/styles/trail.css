@@ -192,3 +192,132 @@ footer a:hover {
 .social a {
     text-decoration: none;
 }
+
+
+/* media query */
+@media screen and (max-width: 950px) {
+    header {
+        border: none;
+        height: 12vw;
+    }
+    #logo_link {
+        height: 10vw;
+        width: 10vw;
+        margin: 1vw 1vw 1vw 1vw;
+    }
+    .logo {
+        width: 10vw;
+    }
+    h1 {
+        grid-column: 2/4;
+        font-size: 3vw;
+    }
+    nav {
+        height: 8vw;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+    nav a {
+        font-size: 2.2vw;
+    }
+
+    #info {
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+        grid-template-rows: 14vw 11vw auto;
+        opacity: 85%;
+    }
+    #info h2 {
+        grid-column: 3/5;
+        grid-row: 1/2;
+        font-size: 2.5vw;
+        background-color: aliceblue;
+        opacity: 80%;
+        margin-top: 5vw;
+        padding: 2vw;
+        border-radius: .5vw;
+    }
+    #info img {
+        grid-row: 1/4;
+        grid-column: 1/7;
+        z-index: -1;
+        width: 100%;
+        min-height: 100%;
+    }
+    #details {
+        grid-column: 2/6;
+        grid-row: 2/3;
+        background-color: aliceblue;
+        opacity: 80%;
+        height: fit-content;
+        margin-top: 2vw;
+        border-radius: .5vw;
+    }
+    #description {
+        grid-row: 3/4;
+        grid-column: 2/6;
+        background-color: aliceblue;
+        opacity: 80%;
+        border-radius: .5vw;
+        height: fit-content;
+        margin-bottom: 5vw;
+    }
+    #info div p {
+        font-size: 1.8vw;
+        margin: 2vw
+    }
+    #info #description p {
+        font-size: 2.2vw;
+    }
+
+    #comment_section {
+        margin-top: 5vw;
+    }
+    .whitespace {
+        height: 5vw;
+    }
+    #comment_box {
+        padding: 3vw;
+        border-radius: 3vw;
+    }
+    #comment_box h2 {
+        font-size: 2.5vw;
+    }
+    .comment {
+        margin: 2vw;
+        border-radius: 1.5vw;
+    }
+    .comment p {
+        font-size: 2vw;
+        margin: 2vw;
+    }
+    .comment_img_box {
+        max-width: 10vw;
+        max-height: 15vw;
+        margin: .5vw;
+        border-radius: 1vw;
+    }
+    .comment_img_box img {
+        max-width: 10vw;
+        max-height: 15vw;
+    }
+    footer {
+        padding: 3vw 6vw 3vw 6vw;
+    }
+    footer p {
+        font-size: 1.5vw;
+    }
+    .social {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 7vw;
+    }
+    .social a {
+        display: block;
+        height: 6vw;
+        margin: .5vw;
+    }
+    .social a img {
+        width: 6vw;
+    }
+}

@@ -100,6 +100,7 @@ nav a:hover {
 #hero_img {
     width: 1595px;
     z-index: -2;
+    min-width: 100%;
 }
 #hero_text_box {
     background-color: var(--secondary-color);
@@ -154,7 +155,7 @@ h3 {
 .slider {
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     overflow: auto;
 }
 .slider_item {
@@ -205,6 +206,9 @@ h3 {
     grid-column: 2/3;
     margin: 5px;
 }
+.slider_item div img.slider_logo {
+    height: 165px;
+}
 
 /* footer */
 
@@ -225,4 +229,58 @@ footer a:hover {
 }
 .social a {
     text-decoration: none;
+}
+
+
+/* media query */
+@media screen and (max-width: 950px) {
+    header {
+        border: none;
+        height: 12vw;
+    }
+    #logo_link {
+        height: 10vw;
+        width: 10vw;
+        margin: 1vw 1vw 1vw 1vw;
+    }
+    .logo {
+        width: 10vw;
+    }
+    h1 {
+        grid-column: 2/4;
+        font-size: 3vw;
+    }
+    nav {
+        height: 8vw;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+    nav a {
+        font-size: 2.2vw;
+    }
+
+
+    
+    footer {
+        padding: 3vw 6vw 3vw 6vw;
+    }
+    footer p {
+        font-size: 1.5vw;
+    }
+    footer a {
+        font-size: 1.5vw;
+    }
+    .social {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 7vw;
+    }
+    .social a {
+        display: block;
+        height: 6vw;
+        margin: .5vw;
+    }
+    .social a img {
+        width: 6vw;
+    }
 }
