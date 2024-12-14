@@ -164,6 +164,7 @@ h3 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, 1fr);
     width: 330px;
+    height: 166px;
     border: 1px solid gray;
 }
 .slider_link {
@@ -259,7 +260,66 @@ footer a:hover {
         font-size: 2.2vw;
     }
 
-
+    #hero {
+        grid-template-rows: 3vw repeat(3, 8vw) repeat(6, 3vw);
+    }
+    #hero_img_box {
+        max-height: 24vw;
+    }
+    #hero_img {
+        max-width: 170vw;
+    }
+    #hero_header {
+        font-size: 3vw;
+        margin: 2vw;
+    }
+    #hero_text {
+        font-size: 1.75vw;
+    }
+    #hero_text_box {
+        padding: 1vw;
+        border: .1vw solid gray;
+    }
+    main {
+        border: .1vw solid gray;
+    }
+    main h2 {
+        margin: 5vw;
+        font-size: 3vw;
+    }
+    .slider_box {
+        max-height: 24vw;
+        border: .1vw solid gray;
+    }
+    h3 {
+        padding: 1.5vw;
+        height: 2vw;
+        font-size: 2vw;
+    }
+    .slider_item {
+        max-width: 36vw;
+        max-height: 18vw;
+        border: .1vw solid gray;
+    }
+    .slider_link {
+        margin: 0 .5vw 1vw .5vw;
+    }
+    .slider_link:nth-of-type(1) {
+        margin-left: 1vw;
+    }
+    .slider_link:nth-last-of-type(1) {
+        margin-right: 1vw;
+    }
+    .slider_item h4 {
+        font-size: 1.8vw;
+    }
+    .slider_item p {
+        font-size: 1.5vw;
+        margin: 1vw;
+    }
+    .slider_item div img {
+        max-height: 18vw;
+    }
     
     footer {
         padding: 3vw 6vw 3vw 6vw;
